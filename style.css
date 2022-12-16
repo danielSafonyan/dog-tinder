@@ -1,0 +1,99 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --padding: 2rem;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#root {
+    height: fit-content;
+}
+
+.header {
+    padding: var(--padding);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon {
+    max-height: 2rem;
+}
+
+.main {
+    width: 95%;
+    margin: auto;
+
+    /* flex: 1; */
+    position: relative;
+}
+
+.dog-img {
+    width: 100%;
+    object-fit: contain;
+    border-radius: 25px;
+}
+
+.dog-info {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+
+    color: whitesmoke;
+}
+
+.name-age {
+    font-size: 2rem;
+    margin-bottom: 0.2em;
+}
+
+.dog-text {
+    font-size: 1.5rem;
+}
+
+.footer {
+    padding: var(--padding);
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.swipe {
+    --side: 4rem;
+    height: var(--side);
+    width: var(--side);
+
+    border-radius: 100%;
+    box-shadow: 0px 10px 20px #E9E9EA;;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.swipe-img {
+        max-height: 2rem;
+        max-width: 2rem;
+}
+
+.left:active {
+    background-color: #FFE7EF;
+    box-shadow: 0px 10px 20px #FFE7EF;
+        ;
+}
+.right:active {
+    background-color: #DBFFF4;
+    box-shadow: 0px 10px 20px #DBFFF4;
+}
+
